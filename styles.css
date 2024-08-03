@@ -4,7 +4,8 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Navbar styling */
@@ -16,23 +17,38 @@ body, html {
     color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: all 0.3s ease; /* Add smooth transition */
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    max-width: 1200px;
+    height: 90px;
+    max-width: 100%;
     margin: auto;
-    padding: 0 20px;
+    padding: 0px 50px;
+}
+.navbar-container ul{
+    
+    /* border: 2px solid red ; */
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+
+.navbar-logo .logo-nav {
+    height: 60px;
+    width: 80px;
+   
+}
+
+.navbar-logo .logo-nav img{
+    height: 100%;
+    width: 100%;
+   
 }
 
 .nav-menu {
@@ -50,15 +66,26 @@ body, html {
     text-decoration: none;
     color: black;
     font-size: 18px;
+    padding: 10px; /* Adjust padding for better appearance */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: rgb(172, 163, 0); /* Change color on hover */
 }
 
 .nav-button {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 209, 71);
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.nav-button:hover {
+    background-color: gray; /* Change background color on hover */
 }
 
 .menu-icon {
@@ -89,6 +116,19 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
+    opacity: .9;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Image styling */
+.hero-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
@@ -97,26 +137,47 @@ body, html {
 /* Hero content styling */
 .hero-content {
     position: relative;
+    right: 25vw;
     z-index: 1;
+    animation: fadeIn 2s ease-in-out; /* Fade in animation */
+    text-align: left;
 }
 
 .hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 55px;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .hero-button {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 209, 71);
+    color: rgb(0, 0, 0);
     border: none;
-    padding: 10px 20px;
+    margin-bottom: 30px;
+    padding: 15px 25px;
     cursor: pointer;
     font-size: 18px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.hero-button:hover {
+    background-color: gray; /* Change background color on hover */
+}
+
+/* Fade in animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Responsive styling for tablets */
@@ -168,4 +229,35 @@ body, html {
     .hero-image {
         display: block;
     }
+
+    .hero-content h1 {
+        font-size: 35px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
+    .hero-content {
+        left: 30px;
+        top: 5px;
+        bottom: 150px;
+    }
+
+
+
+
+
+    .hero-button {
+        padding: 12px 24px;
+        font-size: 20px;
+    }
+    .navbar-container ul{
+    
+        width: 100%;
+        padding: 10px;
+    
+    }
+
 }
