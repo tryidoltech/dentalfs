@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Hero Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Logo</a>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><button class="nav-button">Sign Up</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <video class="hero-video" id="hero-video" autoplay muted loop playsinline>
+            <source src="./Village-Dental.mp4" type="video/mp4" id="video-source">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Your Hero Title</h1>
+            <p>This is a paragraph in the hero section.</p>
+            <button class="hero-button">Learn More</button>
+            <p>Additional information in the hero section.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
