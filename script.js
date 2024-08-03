@@ -1,3 +1,4 @@
+// Toggle navigation menu for mobile view
 const menuIcon = document.getElementById('menu-icon');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -5,6 +6,7 @@ menuIcon.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
+// Switch video source based on screen size
 const heroVideo = document.getElementById('hero-video');
 const videoSource = document.getElementById('video-source');
 

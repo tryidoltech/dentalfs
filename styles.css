@@ -1,3 +1,4 @@
+/* Reset margin and padding, set default font */
 body, html {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ body, html {
     overflow-x: hidden;
 }
 
+/* Navbar styling */
 .navbar {
     position: fixed;
     top: 0;
@@ -68,6 +70,7 @@ body, html {
     font-size: 24px;
 }
 
+/* Hero section styling */
 .hero {
     position: relative;
     width: 100%;
@@ -80,6 +83,7 @@ body, html {
     text-align: center;
 }
 
+/* Video styling */
 .hero-video {
     position: absolute;
     top: 0;
@@ -90,6 +94,7 @@ body, html {
     z-index: -1;
 }
 
+/* Hero content styling */
 .hero-content {
     position: relative;
     z-index: 1;
@@ -114,6 +119,7 @@ body, html {
     font-size: 18px;
 }
 
+/* Responsive styling for tablets */
 @media (max-width: 1024px) {
     .nav-menu {
         display: none;
@@ -153,6 +159,7 @@ body, html {
     }
 }
 
+/* Responsive styling for mobile */
 @media (max-width: 768px) {
     .hero-video {
         display: none;
