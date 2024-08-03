@@ -4,7 +4,6 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
-    /* overflow-x: hidden; */
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
@@ -29,26 +28,21 @@ body, html {
     margin: auto;
     padding: 0px 50px;
 }
-.navbar-container ul{
-    
-    /* border: 2px solid red ; */
+
+.navbar-container ul {
     width: 50%;
     justify-content: center;
     align-items: center;
-
 }
-
 
 .navbar-logo .logo-nav {
     height: 60px;
     width: 80px;
-   
 }
 
-.navbar-logo .logo-nav img{
+.navbar-logo .logo-nav img {
     height: 100%;
     width: 100%;
-   
 }
 
 .nav-menu {
@@ -180,6 +174,46 @@ body, html {
     }
 }
 
+/* Doctors section styling */
+.doctors {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 50vh;
+}
+
+.doctor-div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.doctor-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-div {
+    text-align: left;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content-div h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.content-div p {
+    font-size: 20px;
+}
+
 /* Responsive styling for tablets */
 @media (max-width: 1024px) {
     .nav-menu {
@@ -218,6 +252,13 @@ body, html {
         padding: 8px 16px;
         font-size: 16px;
     }
+
+    .navbar-container ul {
+        width: 90%;
+        padding: 10px;
+        top: 100px;
+        left: 2.5%;
+    }
 }
 
 /* Responsive styling for mobile */
@@ -245,19 +286,25 @@ body, html {
         bottom: 150px;
     }
 
-
-
-
-
     .hero-button {
         padding: 12px 24px;
         font-size: 20px;
     }
-    .navbar-container ul{
-    
-        width: 100%;
+
+    .navbar-container ul {
+        width: 90%;
         padding: 10px;
-    
+        top: 100px;
+        left: 2.5%;
     }
 
+    .doctors {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .doctor-div {
+        width: 100%;
+        height: 50%;
+    }
 }
