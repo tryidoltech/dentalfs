@@ -1,310 +1,443 @@
 /* Reset margin and padding, set default font */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-    overflow-x: hidden;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  overflow-x: hidden;
 }
 
 /* Navbar styling */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    color: black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: all 0.3s ease; /* Add smooth transition */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease; /* Add smooth transition */
 }
 
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    max-width: 100%;
-    margin: auto;
-    padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0px 50px;
 }
 
 .navbar-container ul {
-    width: 50%;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-logo .logo-nav {
-    height: 60px;
-    width: 80px;
+  height: 60px;
+  width: 80px;
 }
 
 .navbar-logo .logo-nav img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .nav-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    padding: 10px; /* Adjust padding for better appearance */
-    transition: color 0.3s ease; /* Smooth color transition */
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px; /* Adjust padding for better appearance */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .nav-link:hover {
-    color: rgb(172, 163, 0); /* Change color on hover */
+  color: rgb(172, 163, 0); /* Change color on hover */
 }
 
 .nav-button {
-    background-color: rgb(255, 209, 71);
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+  background-color: rgb(255, 209, 71);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .nav-button:hover {
-    background-color: gray; /* Change background color on hover */
+  background-color: gray; /* Change background color on hover */
+  color: white;
 }
 
 .menu-icon {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .menu-icon i {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 /* Hero section styling */
 .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
 /* Video styling */
 .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: .9;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 /* Image styling */
 .hero-image {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 /* Hero content styling */
 .hero-content {
-    position: relative;
-    right: 25vw;
-    z-index: 1;
-    animation: fadeIn 2s ease-in-out; /* Fade in animation */
-    text-align: left;
+  position: relative;
+  right: 25vw;
+  z-index: 1;
+  animation: fadeIn 2s ease-in-out; /* Fade in animation */
+  text-align: left;
 }
 
 .hero-content h1 {
-    font-size: 55px;
-    margin-bottom: 30px;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 55px;
+  margin-bottom: 30px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .hero-content p {
-    font-size: 22px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .hero-button {
-    background-color: rgb(255, 209, 71);
-    color: rgb(0, 0, 0);
-    border: none;
-    margin-bottom: 30px;
-    padding: 15px 25px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+  background-color: rgb(255, 209, 71);
+  color: rgb(0, 0, 0);
+  border: none;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .hero-button:hover {
-    background-color: gray; /* Change background color on hover */
+  background-color: gray; /* Change background color on hover */
+  color: white;
 }
 
 /* Fade in animation keyframes */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* lower hero section styling */
+
+.lower-hero {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lower-hero-child {
+  width: 33.33%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(0, 0, 38);
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.lower-hero-child:hover {
+  transform: scale(1.05); /* Add a slight scale effect on hover */
 }
 
 /* Doctors section styling */
 .doctors {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 50vh;
 }
 
 .doctor-div {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .doctor-video {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
 }
 
 .content-div {
-    text-align: left;
-    align-items: start;
-    flex-direction: column;
-    padding: 20px;
+  text-align: left;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .content-div h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
 .content-div p {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+/* Appointment section styling */
+.appointment {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.appointment h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  width: 30%;
+  min-width: 250px;
+  position: relative;
+}
+
+.step img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.step-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #b57d50;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.step p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.request-appointment-button {
+  background-color: rgb(255, 209, 71);
+  color: rgb(0, 0, 0);
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.request-appointment-button:hover {
+  background-color: gray; /* Change background color on hover */
+  color: white;
 }
 
 /* Responsive styling for tablets */
 @media (max-width: 1024px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: white;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-    .nav-menu.active {
-        display: flex;
-    }
+  .nav-menu.active {
+    display: flex;
+  }
 
-    .nav-item {
-        margin: 10px 0;
-    }
+  .nav-item {
+    margin: 10px 0;
+  }
 
-    .menu-icon {
-        display: block;
-    }
+  .menu-icon {
+    display: block;
+  }
 
-    .hero-content h1 {
-        font-size: 36px;
-    }
+  .hero-content h1 {
+    font-size: 36px;
+  }
 
-    .hero-content p {
-        font-size: 16px;
-    }
+  .hero-content p {
+    font-size: 16px;
+  }
 
-    .hero-button {
-        padding: 8px 16px;
-        font-size: 16px;
-    }
+  .hero-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
 
-    .navbar-container ul {
-        width: 90%;
-        padding: 10px;
-        top: 100px;
-        left: 2.5%;
-    }
+  .navbar-container ul {
+    width: 90%;
+    padding: 10px;
+    top: 100px;
+    left: 2.5%;
+  }
+
+  .step {
+    width: 45%;
+  }
+
+  .appointment h2 {
+    font-size: 22px;
+  }
+
+  .request-appointment-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
 }
 
 /* Responsive styling for mobile */
 @media (max-width: 768px) {
-    .hero-video {
-        display: none;
-    }
+  .hero-video {
+    display: none;
+  }
 
-    .hero-image {
-        display: block;
-    }
+  .hero-image {
+    display: block;
+  }
 
-    .hero-content h1 {
-        font-size: 35px;
-        font-family: 'Times New Roman', Times, serif;
-    }
+  .hero-content h1 {
+    font-size: 35px;
+    font-family: "Times New Roman", Times, serif;
+  }
 
-    .hero-content p {
-        font-size: 20px;
-    }
+  .hero-content p {
+    font-size: 20px;
+  }
 
-    .hero-content {
-        left: 30px;
-        top: 5px;
-        bottom: 150px;
-    }
+  .hero-content {
+    left: 30px;
+    top: 5px;
+    bottom: 150px;
+  }
 
-    .hero-button {
-        padding: 12px 24px;
-        font-size: 20px;
-    }
+  .hero-button {
+    padding: 12px 24px;
+    font-size: 20px;
+  }
 
-    .navbar-container ul {
-        width: 90%;
-        padding: 10px;
-        top: 100px;
-        left: 2.5%;
-    }
+  .navbar-container ul {
+    width: 90%;
+    padding: 10px;
+    top: 100px;
+    left: 2.5%;
+  }
 
-    .doctors {
-        flex-direction: column;
-        height: fit-content;
-    }
+  .doctors {
+    flex-direction: column;
+    height: fit-content;
+  }
 
-    .doctor-div {
-        width: 100%;
-        height: 50%;
-    }
+  .doctor-div {
+    width: 100%;
+    height: 50%;
+  }
+
+  .lower-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lower-hero-child {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .appointment h2 {
+    font-size: 20px;
+  }
+
+  .request-appointment-button {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
 }
