@@ -8,6 +8,12 @@ html {
   scroll-behavior: smooth; /* Enable smooth scrolling */
   overflow-x: hidden;
 }
+/* Hide the scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+
 
 /* Navbar styling */
 .navbar {
@@ -203,8 +209,8 @@ html {
 }
 
 .lower-hero-child:hover {
-  transform: scale(1.05); /* Add a slight scale effect on hover */
-}
+  color:  rgb(255, 209, 71);
+    } 
 
 /* Service section */
 .services h1 {
