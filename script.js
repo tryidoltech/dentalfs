@@ -1,4 +1,7 @@
-// Toggle navigation menu for mobile view
+// --------------------------------------------------------------------------
+// --------------Toggle navigation menu for mobile view----------------------
+// -------------------------------------------------------------------------
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menu-icon');
     const navMenu = document.querySelector('.nav-menu');
@@ -10,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
+// ------------------------------------------------------------------------------------
 // -------------------code for services section slider ---------------------------------
-
+// ------------------------------------------------------------------------------------
 
 let currentIndex = 0;
 const cards = document.querySelectorAll('.slider-card');
@@ -38,9 +41,9 @@ setInterval(nextCard, 3000); // Auto slide every 3 seconds
 // Initialize the slider
 showCard(currentIndex);
 
-
+// ------------------------------------------------------------------------
 // --------------code for before after slider-------------------------------
-
+// -------------------------------------------------------------------------
 
 const sliderButton = document.querySelector('.slider-button');
 const imageAfter = document.querySelector('.image-after');
@@ -85,8 +88,9 @@ function stopDragging() {
     document.removeEventListener('touchmove', drag);
     document.removeEventListener('touchend', stopDragging);
 }
-
-// ---------------------------------code for popup form----------------
+// ----------------------------------------------------------------------------
+// ---------------------------------code for popup form------------------------
+// ----------------------------------------------------------------------------
 
 document.addEventListener('DOMContentLoaded', () => {
     const openPopupButtons = document.querySelectorAll('.open-popup');
