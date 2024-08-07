@@ -6,7 +6,6 @@
   --font-size-subtitle: 16px;
 }
 
-
 /* Reset margin and padding, set default font */
 body,
 html {
@@ -283,7 +282,7 @@ html {
   max-width: 350px; /* Adjust this value as needed */
   height: 400px;
   overflow: hidden;
-  
+
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   /* border: 1px solid #ccc; */
   border-radius: 10px;
@@ -322,7 +321,6 @@ html {
   border-radius: 5px;
   outline: none;
   border: none;
-
 }
 
 .prev-btn,
@@ -330,7 +328,7 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.474);  
+  background-color: rgba(0, 0, 0, 0.474);
   color: white;
   border: none;
   padding: 10px;
@@ -485,8 +483,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
-
 
 .testimonials-section {
   padding: 40px 20px;
@@ -926,7 +922,7 @@ html {
     padding: 30px 14px;
     font-size: 16px;
     flex-direction: column;
-    background: url('./assets/bg-doc.png');
+    background: url("./assets/bg-doc.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
