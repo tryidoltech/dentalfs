@@ -291,7 +291,7 @@ html {
 .slider-container {
   position: relative;
   width: 100%;
-  max-width: 300px; /* Adjust this value as needed */
+  max-width: 350px; /* Adjust this value as needed */
   height: 400px;
   overflow: hidden;
   border: 1px solid #ccc;
@@ -793,6 +793,10 @@ html {
   .lower-hero-child {
     width: 90%;
     margin: 10px 0;
+  }
+  .lower-hero{
+    
+  margin-top: 20px;
   }
 
   .step {
