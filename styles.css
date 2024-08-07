@@ -414,6 +414,7 @@ html {
   cursor: pointer;
   font-size: 16px;
   margin-top: 20px;
+  margin-bottom: 20px;
   transition: background-color 0.3s ease;
 }
 
@@ -859,15 +860,13 @@ html {
   .lower-hero-child {
     width: 33%;
     margin: 0 0;
-    height: 120px;
+    height: 220px;
 
     h1,
     p {
-      font-size: 10px;
+      font-size: 20px;
     }
-    p {
-      display: none;
-    }
+
   }
 
   .step {
@@ -881,6 +880,7 @@ html {
   .request-appointment-button {
     padding: 12px 24px;
     font-size: 20px;
+    margin-bottom: 30px;
   }
   .footer-column {
     width: 45%;
@@ -927,12 +927,13 @@ html {
       width: 100%;
     } */
     iframe {
-      height: 100%;
+      /* height: 90%; */
       width: 100%;
     }
+  
   }
   .hero-doc-lower-child {
-    height: 60%;
+    /* height: 60%;
     width: 92%;
     border-radius: 0 0 10px 10px;
     padding: 30px 14px;
@@ -941,7 +942,9 @@ html {
     background: url("./assets/bg-doc.png");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    width: 95%;
+    margin: 0 auto;
     h1 {
       color: var(--primary-color);
     }
@@ -949,5 +952,15 @@ html {
       width: 90%;
       color: var(--secondary-color);
     }
+  }
+
+
+  .lower-hero-child {
+    width: 90%;
+    margin: 5px 0;
+  }
+  .lower-hero{    
+  margin-top: 15px;
+  flex-direction: column;
   }
 }
