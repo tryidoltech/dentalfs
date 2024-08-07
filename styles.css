@@ -6,7 +6,7 @@
   --font-size-title: 24px;
   --font-size-subtitle: 16px;
 
-
+}
 
 /* Reset margin and padding, set default font */
 body,
@@ -223,75 +223,141 @@ html {
     } 
 
 /* Service section */
-.services h1 {
-  font-size: 5vw;
-  text-align: center;
-  color: var(--primary-color);
-}
 
-.carousel-container {
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
+
+.services{
   height: fit-content;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
-}
-
-.card {
-  /* flex: 0 0 25%; */
-  padding: 20px;
+  width: 100%;
   text-align: center;
+}
+.services h1{
+  font-size: 5vw;
+  color: var(--secondary-color);
+}
+
+.services .card-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
+  height: fit-content;
+  }
+  .services .card-parent .card-child{
+    height: 400px;
+    width: 300px;
+    background-color: rgba(240, 248, 255, 0.71) ;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .services .card-parent .card-child img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .services .card-parent .card-child h1{
+    font-size: 1.5vw;
+
+  }
+  .services .card-parent .card-child button{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+  }
+  
+  /* code for phone slider */
+  .phone-hedding,.p-section{
+    display: none;   
+  }
+  .p-section h1{
+    text-align: center;
+    color: var(--secondary-color);
+  }
+
+
+  .services-phone{
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Adjust this value as needed */
   height: 400px;
-  margin: 50px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-card {
+ min-width: 100%; 
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px; 
+  height: 400px;
+  background-color: rgba(240, 248, 255, 0.71) ;
   border-radius: 20px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.slider-card h1{
+  color: #457b9d;
 }
 
-.card img {
-  width: 60%;
+.slider-card img {
+  width: 100%;
   height: 50%;
+  border-radius: 10px;
 }
-
-.description {
-  margin: 10px 0;
-  padding: 50px;
-}
-
-.read-more {
-  padding: 10px 20px;
+.slider-card button{
   background-color: var(--primary-color);
-  color: rgb(255, 255, 255);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
   border: none;
-  cursor: pointer;
 }
 
-.control {
+.prev-btn, .next-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--secondary-color);
-  color: rgb(0, 0, 0);
+  background-color: var(--primary-color);
+  color: white;
   border: none;
-  cursor: pointer;
   padding: 10px;
-  font-size: 18px;
-  z-index: 1;
-  border-radius: 20px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
-.prev {
+.prev-btn {
   left: 10px;
 }
 
-.next {
+.next-btn {
   right: 10px;
 }
+
+
+
+
+
+
 
 /* Appointment section styling */
 .appointment {
@@ -360,6 +426,83 @@ html {
   background-color: gray; /* Change background color on hover */
   color: white;
 }
+
+
+
+/* <!-- code for before after image slider --> */
+
+
+.before-after{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: #ffffff;
+  margin: 50px;
+  column-gap: 50px;
+}
+.before-after h1{
+  font-size: 4vw;
+  color: var(--primary-color);
+}
+.before-after p{
+  font-size: 1.5vw;
+  color: var(--secondary-color);
+}
+
+
+.slider-container2 {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.image-before,
+.image-after {
+  display: block;
+  width: 100%;
+}
+
+.image-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
 
 /* Doctors section styling */
 .doctors {
@@ -574,8 +717,23 @@ html {
     padding: 12px 20px;
     font-size: 14px;
   }
-  .card {
-    flex: 0 0 50%;
+  .services{
+    display: none;
+  }
+  .services-phone{
+    display: flex;
+  }
+  .phone-hedding,.p-section{
+    display: block;
+  }
+  .before-after{
+    flex-direction: column;
+    h1{
+      font-size: 28px;
+    }
+    p{
+      font-size: 16px;
+    }
   }
 }
 
@@ -651,23 +809,10 @@ html {
   .footer-column {
     width: 45%;
   }
-  .card {
-    flex: 0 0 84%;
-    margin: 10px;
-    height: 400px;
-    width: 260px;
-    padding: 10px;
-  }
-  .card img {
-    width: 40%;
-    height: 40%;
-  }
-  .services h1 {
-    font-size: 5vh;
-    text-align: center;
-    color: rgb(0, 10, 75);
-  }
+  .slider-container2 {
+    width: 100%;
 }
-}
+  
 
+}
 

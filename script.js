@@ -9,28 +9,30 @@ menuIcon.addEventListener('click', () => {
 
 // -------------------code for services section slider ---------------------------------
 
+
 let currentIndex = 0;
-const carousel = document.querySelector('.carousel');
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.slider-card');
 const totalCards = cards.length;
 
-function showSlide(index) {
-    const cardWidth = cards[0].offsetWidth;
-    const newTransform = -index * cardWidth + 'px';
-    carousel.style.transform = `translateX(${newTransform})`;
+function showCard(index) {
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    sliderWrapper.style.transform = `translateX(${-index * 100}%)`;
 }
 
-function nextSlide() {
+function nextCard() {
     currentIndex = (currentIndex + 1) % totalCards;
-    showSlide(currentIndex);
+    showCard(currentIndex);
 }
 
-function prevSlide() {
+function prevCard() {
     currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-    showSlide(currentIndex);
+    showCard(currentIndex);
 }
 
-setInterval(nextSlide, 2000);
+setInterval(nextCard, 3000); // Auto slide every 3 seconds
+
+// Initialize the slider
+showCard(currentIndex);
 
 
 // --------------code for before after slider-------------------------------
