@@ -6,6 +6,7 @@
   --font-size-subtitle: 16px;
 }
 
+
 /* Reset margin and padding, set default font */
 body,
 html {
@@ -485,6 +486,88 @@ html {
   justify-content: center;
 }
 
+
+
+.testimonials-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.testimonials-header h2 {
+  font-size: 2em;
+  color: #1d3557;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews span {
+  color: #f4a261;
+  font-size: 1.5em;
+}
+
+.reviews a {
+  color: #1d3557;
+  text-decoration: none;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* testimoniol section  */
+
+.testimonial {
+  flex: 1 1 calc(33.333% - 20px);
+  background: #f1faee;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial:nth-child(2) {
+  background: #a8dadc;
+}
+
+.testimonial:nth-child(3) {
+  background: #457b9d;
+  color: #fff;
+}
+
+.testimonial p {
+  margin: 0 0 20px;
+  font-size: 1em;
+}
+
+.testimonial span {
+  font-weight: bold;
+}
+
+.testimonial::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.testimonial:nth-child(3)::after {
+  background: #000;
+}
 /* Doctors section styling */
 .doctors {
   display: flex;
@@ -805,6 +888,13 @@ html {
 
   .menu-icon {
     display: block;
+  }
+  .testimonial {
+    flex: 1 1 100%;
+  }
+
+  .testimonials-header {
+    text-align: center;
   }
   .hero-doc {
     display: block;
