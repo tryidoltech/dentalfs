@@ -804,8 +804,9 @@ html {
   }
 
   .request-appointment-button {
-    padding: 10px 15px;
-    font-size: 12px;
+
+    padding: 12px 24px;
+    font-size: 20px;
   }
   .footer-column {
     width: 45%;
