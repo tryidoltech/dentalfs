@@ -85,3 +85,28 @@ function stopDragging() {
     document.removeEventListener('touchmove', drag);
     document.removeEventListener('touchend', stopDragging);
 }
+
+// ---------------------------------code for popup form----------------
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openPopupButtons = document.querySelectorAll('.open-popup');
+    const popup = document.getElementById('popup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    openPopupButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Smile | Best Dental Clinic</title>
     <!-- Link to external CSS file -->
+     <link rel="stylesheet" href="./popup.css">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./assets/Logo3.png" />
     <!-- Link to Font Awesome for icons -->
@@ -14,7 +15,6 @@
     />
   </head>
   <body>
-    <!-- Navigation bar -->
     <!-- Navigation bar -->
     <nav class="navbar">
       <div class="navbar-container">
@@ -42,7 +42,7 @@
             <a href="./blogs/blogs.html" class="nav-link">Blogs</a>
           </li>
           <li class="nav-item">
-            <button class="nav-button">Book Online</button>
+            <button class="nav-button open-popup">Book Online</button>
           </li>
         </ul>
       </div>
@@ -68,7 +68,7 @@
           Exceptional care <br />
           for all ages
         </h1>
-        <button class="hero-button">Book Online</button>
+        <button class="hero-button open-popup">Book Online</button>
         <p>Or Call 01125532553</p>
       </div>
     </section>
@@ -124,8 +124,9 @@
 
     <section class="hero-doc">
       <div class="hero-doc-upper-child hero-doc-child">
-        <video  autoplay muted loop playsinline>
-          <source src="./assets/hero-doc.mp4" type="video/mp4" /></video>
+        <video autoplay muted loop playsinline>
+          <source src="./assets/hero-doc.mp4" type="video/mp4" />
+        </video>
       </div>
       <div class="hero-doc-lower-child hero-doc-child">
         <h1>
@@ -234,7 +235,7 @@
           <p>Create a plan and start your smile journey</p>
         </div>
       </div>
-      <button class="request-appointment-button">Request Appointment</button>
+      <button class="request-appointment-button open-popup">Request Appointment</button>
     </section>
 
     <!-- code for before after image slider -->
@@ -339,6 +340,32 @@
         </div>
       </div>
     </section>
+
+    <!-- Popup form -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
 
     <!-- Link to external JavaScript file -->
     <script src="script.js"></script>

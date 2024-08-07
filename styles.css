@@ -59,6 +59,8 @@ html {
 
 .nav-menu {
   display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -70,7 +72,7 @@ html {
 
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   padding: 10px;
   transition: color 0.3s ease;
