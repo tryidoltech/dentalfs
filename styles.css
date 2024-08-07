@@ -1,11 +1,9 @@
-
 :root {
   --primary-color: #012a58; /* Dark Blue */
   --secondary-color: #457b9d; /* Light Blue */
   --background-color: #ffffff; /* White */
   --font-size-title: 24px;
   --font-size-subtitle: 16px;
-
 }
 
 /* Reset margin and padding, set default font */
@@ -22,8 +20,6 @@ html {
 ::-webkit-scrollbar {
   width: 0;
 }
-
-
 
 /* Navbar styling */
 .navbar {
@@ -186,7 +182,7 @@ html {
     opacity: 1;
   }
 }
-.hero-doc{
+.hero-doc {
   display: none;
 }
 
@@ -213,82 +209,82 @@ html {
 }
 
 .lower-hero-child:hover {
-  color:  var(--secondary-color);
-    } 
+  color: var(--secondary-color);
+}
 
 /* Service section */
 
-
-.services{
+.services {
   height: fit-content;
   width: 100%;
   text-align: center;
 }
-.services h1{
+.services h1 {
   font-size: 5vw;
   color: var(--secondary-color);
 }
 
-.services .card-parent{
+.services .card-parent {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 60px;
   height: fit-content;
-  }
-  .services .card-parent .card-child{
-    height: 400px;
-    width: 300px;
-    background-color: rgba(240, 248, 255, 0.71) ;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-  .services .card-parent .card-child img{
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
-  }
-  .services .card-parent .card-child h1{
-    font-size: 1.5vw;
+}
+.services .card-parent .card-child {
+  height: 400px;
+  width: 300px;
+  background-color: rgba(240, 248, 255, 0.71);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.services .card-parent .card-child img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+.services .card-parent .card-child h1 {
+  font-size: 1.5vw;
+}
+.services .card-parent .card-child button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
 
-  }
-  .services .card-parent .card-child button{
-    background-color: var(--primary-color);
-    color: white;
-    padding: 8px 20px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-  }
-  
-  /* code for phone slider */
-  .phone-hedding,.p-section{
-    display: none;   
-  }
-  .p-section h1{
-    text-align: center;
-    color: var(--secondary-color);
-  }
+/* code for phone slider */
+.phone-hedding,
+.p-section {
+  display: none;
+}
+.p-section h1 {
+  text-align: center;
+  color: var(--secondary-color);
+}
 
+.services-phone {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 0;
+  background-color: #ffffff;
+}
 
-  .services-phone{
-    display: none;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    margin: 0;
-    background-color: #ffffff;
-  }
-  
 .slider-container {
   position: relative;
   width: 100%;
   max-width: 350px; /* Adjust this value as needed */
   height: 400px;
   overflow: hidden;
-  border: 1px solid #ccc;
+  
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 1px solid #ccc; */
   border-radius: 10px;
   background-color: #fff;
 }
@@ -299,17 +295,17 @@ html {
 }
 
 .slider-card {
- min-width: 100%; 
+  min-width: 100%;
   box-sizing: border-box;
   text-align: center;
-  padding: 20px; 
+  padding: 20px;
   height: 400px;
-  background-color: rgba(240, 248, 255, 0.71) ;
+  background-color: rgba(240, 248, 255, 0.71);
   border-radius: 20px;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
-.slider-card h1{
+.slider-card h1 {
   color: #457b9d;
 }
 
@@ -318,25 +314,29 @@ html {
   height: 50%;
   border-radius: 10px;
 }
-.slider-card button{
+.slider-card button {
   background-color: var(--primary-color);
   color: white;
   padding: 8px 20px;
   border-radius: 5px;
   outline: none;
   border: none;
+
 }
 
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.474);  
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 .prev-btn {
@@ -346,12 +346,6 @@ html {
 .next-btn {
   right: 10px;
 }
-
-
-
-
-
-
 
 /* Appointment section styling */
 .appointment {
@@ -421,12 +415,9 @@ html {
   color: white;
 }
 
-
-
 /* <!-- code for before after image slider --> */
 
-
-.before-after{
+.before-after {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -436,18 +427,17 @@ html {
   margin: 50px;
   column-gap: 50px;
 }
-.before-after h1{
+.before-after h1 {
   font-size: 4vw;
   text-align: center;
   color: var(--primary-color);
   text-decoration: none;
 }
-.before-after p{
+.before-after p {
   font-size: 1.5vw;
   text-align: center;
   color: var(--secondary-color);
 }
-
 
 .slider-container2 {
   position: relative;
@@ -494,12 +484,6 @@ html {
   align-items: center;
   justify-content: center;
 }
-
-
-
-
-
-
 
 /* Doctors section styling */
 .doctors {
@@ -626,13 +610,11 @@ html {
   font-size: 14px;
 }
 
-
 /* ---------------------------------- 
            # CSS FOR Other Pages
   ------------------------------------*/
 
-
-.nevigate-menu{
+.nevigate-menu {
   height: 300px;
   width: 100%;
   background-color: var(--secondary-color);
@@ -642,19 +624,11 @@ html {
   justify-content: center;
   flex-direction: column;
   padding-top: 50px;
-  
 }
 .nevigate-menu h1 a {
   color: rgb(0, 0, 38);
   text-decoration: none;
 }
-
-
-
-
-
-
-
 
 /* Responsive styling for tablets */
 @media (max-width: 1024px) {
@@ -714,21 +688,22 @@ html {
     padding: 12px 20px;
     font-size: 14px;
   }
-  .services{
+  .services {
     display: none;
   }
-  .services-phone{
+  .services-phone {
     display: flex;
   }
-  .phone-hedding,.p-section{
+  .phone-hedding,
+  .p-section {
     display: block;
   }
-  .before-after{
+  .before-after {
     flex-direction: column;
-    h1{
+    h1 {
       font-size: 28px;
     }
-    p{
+    p {
       font-size: 16px;
     }
   }
@@ -791,14 +766,14 @@ html {
     margin: 0 0;
     height: 120px;
 
-    h1,p{
+    h1,
+    p {
       font-size: 10px;
     }
-    p{
+    p {
       display: none;
     }
   }
-
 
   .step {
     width: 100%;
@@ -809,7 +784,6 @@ html {
   }
 
   .request-appointment-button {
-
     padding: 12px 24px;
     font-size: 20px;
   }
@@ -818,48 +792,56 @@ html {
   }
   .slider-container2 {
     width: 100%;
-}
-.nav-menu {
-  flex-direction: column;
-  display: none;
-  width: 100%;
-}
-
-.nav-menu.active {
-  display: flex;
-}
-
-.menu-icon {
-  display: block;
-}
-.hero-doc{
-  display: block;
-  height: fit-content;
-  width: 100%;
-  border: 1px solid black;
-}
-.hero-doc-upper-child{
-  height: 33%;
-  width: 100%;
-  video{
-    height: 100%;
+  }
+  .nav-menu {
+    flex-direction: column;
+    display: none;
     width: 100%;
   }
-}
-.hero-doc-lower-child{
-  height: 60%;
-  width: 100%;
-  padding: 30px 20px;
-  font-size: 18px;
-  h1{
-    color: var(--primary-color);
-  }
-  p{
-    width: 90%;
-    color: var(--secondary-color);
-  }
-}
-  
 
-}
+  .nav-menu.active {
+    display: flex;
+  }
 
+  .menu-icon {
+    display: block;
+  }
+  .hero-doc {
+    display: block;
+    height: fit-content;
+    width: 85%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgb(244, 250, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .hero-doc-upper-child {
+    height: 33%;
+    width: 100%;
+    video {
+      height: 90%;
+      width: 100%;
+    }
+  }
+  .hero-doc-lower-child {
+    height: 60%;
+    width: 92%;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 14px;
+    font-size: 16px;
+    flex-direction: column;
+    background: url('./assets/bgimg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1 {
+      color: var(--primary-color);
+    }
+    p {
+      width: 90%;
+      color: var(--secondary-color);
+    }
+  }
+}
