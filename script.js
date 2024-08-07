@@ -1,9 +1,13 @@
 // Toggle navigation menu for mobile view
-const menuIcon = document.getElementById('menu-icon');
-const navMenu = document.querySelector('.nav-menu');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.getElementById('menu-icon');
+    const navMenu = document.querySelector('.nav-menu');
 
-menuIcon.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    menuIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuIcon.querySelector('i').classList.toggle('fa-bars');
+        menuIcon.querySelector('i').classList.toggle('fa-times');
+    });
 });
 
 

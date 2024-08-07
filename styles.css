@@ -30,11 +30,11 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: var(--background-color);
   color: black;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  transition: all 0.3s ease; /* Add smooth transition */
+  transition: all 0.3s ease;
 }
 
 .navbar-container {
@@ -44,13 +44,7 @@ html {
   height: 90px;
   max-width: 100%;
   margin: auto;
-  padding: 0px 50px;
-}
-
-.navbar-container ul {
-  width: 50%;
-  justify-content: center;
-  align-items: center;
+  padding: 0 50px;
 }
 
 .navbar-logo .logo-nav {
@@ -78,27 +72,27 @@ html {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  padding: 10px; /* Adjust padding for better appearance */
-  transition: color 0.3s ease; /* Smooth color transition */
+  padding: 10px;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: var(--primary-color); /* Change color on hover */
+  color: var(--primary-color);
 }
 
 .nav-button {
   background-color: var(--primary-color);
-  color: rgb(245, 245, 245);
+  color: var(--background-color);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 18px;
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+  transition: background-color 0.3s ease;
 }
 
 .nav-button:hover {
-  background-color: gray; /* Change background color on hover */
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
 }
 
 .menu-icon {
@@ -110,7 +104,6 @@ html {
   font-size: 24px;
 }
 
-/* Hero section styling */
 .hero {
   position: relative;
   width: 100%;
@@ -135,16 +128,12 @@ html {
   z-index: -1;
 }
 
-/* Image styling */
-.hero-image {
+.desktop-video {
+  display: block;
+}
+
+.mobile-video {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
 }
 
 /* Hero content styling */
@@ -195,6 +184,7 @@ html {
     opacity: 1;
   }
 }
+
 
 /* lower hero section styling */
 
@@ -742,11 +732,11 @@ html {
 
 /* Responsive styling for mobile */
 @media (max-width: 768px) {
-  .hero-video {
+  .desktop-video {
     display: none;
   }
 
-  .hero-image {
+  .mobile-video {
     display: block;
   }
 
@@ -770,7 +760,6 @@ html {
     padding: 12px 24px;
     font-size: 20px;
   }
-
   .navbar-container ul {
     width: 90%;
     padding: 10px;
@@ -820,6 +809,19 @@ html {
   }
   .slider-container2 {
     width: 100%;
+}
+.nav-menu {
+  flex-direction: column;
+  display: none;
+  width: 100%;
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+.menu-icon {
+  display: block;
 }
   
 
