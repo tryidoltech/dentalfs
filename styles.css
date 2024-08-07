@@ -432,8 +432,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: fit-content;
-  background-color: #ffffff;
   margin: 50px;
   column-gap: 50px;
 }
@@ -449,27 +447,61 @@ html {
   color: var(--secondary-color);
 }
 
-.slider-container2 {
+.slider-container5 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  height: fit-content;
+  background-color: rgb(244, 250, 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+}
+
+.slider5 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide5 {
+  min-width: 400px;
+  height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.before-after5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-container25 {
   position: relative;
   width: 80%;
-  max-width: 600px;
+  max-width: 400px;
   overflow: hidden;
   user-select: none;
 }
 
-.image-container {
+.image-container5 {
   position: relative;
   display: flex;
   width: 100%;
 }
 
-.image-before,
-.image-after {
+.image-before5,
+.image-after5 {
   display: block;
   width: 100%;
 }
 
-.image-after {
+.image-after5{
   position: absolute;
   top: 0;
   left: 0;
@@ -477,7 +509,7 @@ html {
   clip-path: inset(0 50% 0 0);
 }
 
-.slider-button {
+.slider-button5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -493,6 +525,29 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+button.prev5, button.next5 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev5 {
+  left: 10px;
+}
+
+button.next5 {
+  right: 10px;
+}
+
+button.prev5:hover, button.next5:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* ----------------------------------------------------------------------------------- */
