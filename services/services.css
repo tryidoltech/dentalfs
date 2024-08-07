@@ -72,6 +72,7 @@
 @media (max-width: 768px) {
     .slider-container2 {
         width: 100%;
+        margin-bottom: 50px;
     }
     .before-after{
         flex-direction: column;
