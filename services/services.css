@@ -1,0 +1,71 @@
+.before-after{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #ffffff;
+    margin: 20px;
+    column-gap: 50px;
+}
+.before-after h1{
+    font-size: 4vw;
+    color: var(--primary-color);
+}
+.before-after p{
+    font-size: 1.5vw;
+    color: var(--secondary-color);
+}
+
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.image-before,
+.image-after {
+    display: block;
+    width: 100%;
+}
+
+.image-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    clip-path: inset(0 50% 0 0);
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        width: 100%;
+    }
+}
