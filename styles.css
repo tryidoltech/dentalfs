@@ -748,12 +748,13 @@ html {
   }
 
   .hero-content h1 {
-    font-size: 25px;
+    font-size: 35px;
     font-family: "Times New Roman", Times, serif;
   }
 
   .hero-content p {
     font-size: 20px;
+    width: 400px;
   }
 
   .hero-content {
