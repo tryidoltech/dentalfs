@@ -22,6 +22,7 @@
   }
 
 }
+}
 
 /* --------------------------------------------------------- 
 -----------------code for apoinment popup-------------------
@@ -91,7 +92,7 @@ button[type="submit"]:hover {
   background-color: var(--secondary-color);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 748px) {
   .popup-content {
     padding: 15px;
   }
@@ -106,13 +107,13 @@ button[type="submit"]:hover {
   column-gap: 50px;
 }
 .before-after h1 {
-  font-size: 4vw;
+  font-size: 24px;
   text-align: center;
   color: var(--primary-color);
   text-decoration: none;
 }
 .before-after p {
-  font-size: 1.5vw;
+  font-size: 16px;
   text-align: center;
   color: var(--secondary-color);
 }
@@ -219,4 +220,5 @@ button.next5 {
 button.prev5:hover, button.next5:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-}
+
+/* } */
