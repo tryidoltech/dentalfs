@@ -9,7 +9,6 @@
   --color3: #ffffffcb; /* Green */
   
 }
-
 .blog {
   padding: 20px;
   background-color: var(--background-color);
@@ -30,8 +29,8 @@
   padding: 20px;
   width: 350px;
   box-sizing: border-box;
-  transition: transform 0.3s ease, background-color 0.3s ease;
   position: relative;
+
 }
 
 .blog-container-items h4 {

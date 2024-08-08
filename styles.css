@@ -1044,16 +1044,16 @@ button.prev5:hover, button.next5:hover {
   .hero-doc-upper-child {
     height: 33%;
     width: 100%;
-    /* video {
+    video {
       height: 90%;
       width: 100%;
-    } */
-    iframe {
+    }
+    /* iframe { */
       /* height: 90%; */
-      width: 100%;
+      /* width: 100%;
       outline: none;
       border: none;
-    }
+    } */
   
   }
   .hero-doc-lower-child {
