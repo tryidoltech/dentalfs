@@ -1035,12 +1035,10 @@ button.prev5:hover, button.next5:hover {
   .hero-doc {
     display: block;
     height: fit-content;
-    width: 85%;
-    padding: 10px;
-    margin: 0 auto;
+    width: 100%;
+    /* padding: 10px; */
     border-radius: 10px;
     margin-top: 20px;
-    background-color: rgb(244, 250, 255);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   .hero-doc-upper-child {
@@ -1053,6 +1051,8 @@ button.prev5:hover, button.next5:hover {
     iframe {
       /* height: 90%; */
       width: 100%;
+      outline: none;
+      border: none;
     }
   
   }
@@ -1067,14 +1067,18 @@ button.prev5:hover, button.next5:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; */
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    background: url("./assets/bg-doc.png");
+    background-position: center;
+    background-size: cover;
+    /* margin: 0 auto; */
     h1 {
       color: var(--primary-color);
     }
     p {
       width: 90%;
-      color: var(--secondary-color);
+      color: black;
     }
   }
 
