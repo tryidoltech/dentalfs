@@ -74,6 +74,7 @@ button[type="submit"]:hover {
   cursor: pointer;
   border-radius: 5px;
   width: 100%;
+  margin-bottom: 20px;
 }
 .popup h2{
   position: relative;
