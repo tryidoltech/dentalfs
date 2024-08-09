@@ -1,7 +1,4 @@
-.services{
-  display: block;
 
-}
 @media (max-width: 768px) {
 .card-parent{
   display: flex;
@@ -15,14 +12,9 @@
     font-size: 20px;
   }
 }
-.services{
-  display: block;
-  h1{
-    font-size: 24px;
-  }
 
 }
-}
+
 
 /* --------------------------------------------------------- 
 -----------------code for apoinment popup-------------------

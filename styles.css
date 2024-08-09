@@ -217,7 +217,6 @@ html {
 /* -------------------------welcome-section------------------------- */
 /* ------------------------------------------------------------------- */
 
-
 .welcome-section {
   /* display: flex; */
   display: none;
@@ -238,7 +237,7 @@ html {
 
 .content-wrapper {
   background-color: #e8d0b2; /* Background color matching the content section */
-  background: url('./assets/vbg.jpg');
+  background: url("./assets/vbg.jpg");
   background-position: center;
   background-size: contain;
   /* background-repeat: no-repeat;   */
@@ -263,7 +262,7 @@ html {
 hr {
   border: 0;
   border-top: 1px solid #333333; /* Line color matching the text */
-  margin: 20px 0; 
+  margin: 20px 0;
 }
 
 .meet-team-button {
@@ -326,37 +325,34 @@ hr {
 .service-item-butom {
   padding: 20px;
 }
-.service-item-butom p{
+.service-item-butom p {
   width: 80%;
 }
 
-#service-item1{
+#service-item1 {
   background: url(./assets/img2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-#service-item2{
+#service-item2 {
   background: url(./assets/img2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-#service-item3{
+#service-item3 {
   background: url(./assets/img2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-#service-item4{
+#service-item4 {
   background: url(./assets/img2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
-
 
 /* ------------------------------------------------------------------------------------------------ */
 /* -----------------------------Appointment section styling ----------------------------------*/
@@ -685,6 +681,57 @@ button.next5:hover {
 .content-div p {
   font-size: 20px;
 }
+/*---------------------------tt----------------------  */
+.carousel{
+  display: none;
+  background: url('./assets/ttbg.png');
+}
+.c-c-1{
+  background-color: #ffffff;
+  margin-left: 20px;
+}
+.c-c-1 p{
+  text-align: left;
+  font-weight: bolder;
+}
+.c-c-3{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  flex-direction: column;
+}
+#tg{
+  position: relative;
+  right: 150px;
+}
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  touch-action: pan-y;
+  h4{
+    text-align: left;
+    font-weight: bolder;
+  }
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+}
+
 
 /* /---------------------------------------------------- */
 
@@ -1031,7 +1078,6 @@ button.next5:hover {
   .testimonials-header {
     text-align: center;
   }
-  
 
   .lower-hero-child {
     width: 90%;
@@ -1050,5 +1096,8 @@ button.next5:hover {
   }
   .welcome-section {
     display: flex;
+  }
+  .carousel{
+    display: block;
   }
 }
