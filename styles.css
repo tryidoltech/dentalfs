@@ -314,6 +314,12 @@ hr {
   overflow: hidden;
   background-color: whitesmoke;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 50px;
+  transition: .5s;
+}
+.service-item:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow */
+  background-color: #f9f9f9; /* Light gray background on hover */
 }
 .service-item-child {
   height: 50%;
