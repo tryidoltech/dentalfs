@@ -82,6 +82,7 @@ sliders5.forEach((sliderContainer5) => {
 // ---------------------------------code for popup form------------------------
 // ----------------------------------------------------------------------------
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const openPopupButtons = document.querySelectorAll('.open-popup');
     const popup = document.getElementById('popup');
@@ -103,4 +104,65 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+
+const carouselTrack = document.querySelector('.carousel-track');
+let isTouchActive = false;
+let initialTouchPos = 0;
+let currentSlidePos = 0;
+let previousSlidePos = 0;
+let animationFrameID;
+let activeSlideIndex = 0;
+
+carouselTrack.addEventListener('touchstart', handleTouchStart);
+carouselTrack.addEventListener('touchend', handleTouchEnd);
+carouselTrack.addEventListener('touchmove', handleTouchMove);
+
+function handleTouchStart(event) {
+    isTouchActive = true;
+    initialTouchPos = event.touches[0].clientX;
+    carouselTrack.style.transition = 'none';
+    animationFrameID = requestAnimationFrame(runAnimation);
+}
+
+function handleTouchEnd() {
+    isTouchActive = false;
+    cancelAnimationFrame(animationFrameID);
+
+    const swipeDistance = currentSlidePos - previousSlidePos;
+
+    // Calculate the width of each carousel slide
+    const slideWidth = carouselTrack.children[0].offsetWidth;
+
+    if (swipeDistance < -slideWidth / 4 && activeSlideIndex < carouselTrack.children.length - 1) {
+        activeSlideIndex += 1;
+    }
+
+    if (swipeDistance > slideWidth / 4 && activeSlideIndex > 0) {
+        activeSlideIndex -= 1;
+    }
+
+    updateSlidePosition();
+}
+
+function handleTouchMove(event) {
+    if (isTouchActive) {
+        const currentTouchPos = event.touches[0].clientX;
+        currentSlidePos = previousSlidePos + currentTouchPos - initialTouchPos;
+    }
+}
+
+function runAnimation() {
+    carouselTrack.style.transform = `translateX(${currentSlidePos}px)`;
+    if (isTouchActive) requestAnimationFrame(runAnimation);
+}
+
+function updateSlidePosition() {
+    const slideWidth = carouselTrack.children[0].offsetWidth;
+    currentSlidePos = activeSlideIndex * -slideWidth;
+    previousSlidePos = currentSlidePos;
+    carouselTrack.style.transition = 'transform 0.3s ease-in-out';
+    carouselTrack.style.transform = `translateX(${currentSlidePos}px)`;
+}
 
