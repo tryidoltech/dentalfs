@@ -600,7 +600,7 @@ button.next5:hover {
 
 .testimonial {
   flex: 1 1 calc(33.333% - 20px);
-  background: #f1faee;
+  background: #ffffff;
   padding: 20px;
   border-radius: 8px;
   position: relative;
@@ -608,7 +608,7 @@ button.next5:hover {
 }
 
 .testimonial:nth-child(2) {
-  background: #a8dadc;
+  background: #ffffff;
 }
 
 .testimonial:nth-child(3) {
@@ -682,25 +682,25 @@ button.next5:hover {
   font-size: 20px;
 }
 /*---------------------------tt----------------------  */
-.carousel{
+.carousel {
   display: none;
-  background: url('./assets/ttbg.png');
+  background: url("./assets/ttbg.png");
 }
-.c-c-1{
+.c-c-1 {
   background-color: #ffffff;
   margin-left: 20px;
 }
-.c-c-1 p{
+.c-c-1 p {
   text-align: left;
   font-weight: bolder;
 }
-.c-c-3{
+.c-c-3 {
   display: flex;
   align-items: end;
   justify-content: end;
   flex-direction: column;
 }
-#tg{
+#tg {
   position: relative;
   right: 150px;
 }
@@ -709,7 +709,7 @@ button.next5:hover {
   overflow: hidden;
   position: relative;
   touch-action: pan-y;
-  h4{
+  h4 {
     text-align: left;
     font-weight: bolder;
   }
@@ -727,11 +727,10 @@ button.next5:hover {
   background-color: whitesmoke;
 }
 
-p {
+.carousel p {
   font-size: 16px;
   text-align: center;
 }
-
 
 /* /---------------------------------------------------- */
 
@@ -1097,23 +1096,7 @@ p {
   .welcome-section {
     display: flex;
   }
-  .carousel{
+  .carousel {
     display: block;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------ */
-

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------
 // --------------Toggle navigation menu for mobile view----------------------
-// -------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menu-icon');
@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 // ------------------------------------------------------------------------------------
 // -------------------code for services section slider ---------------------------------
 // ------------------------------------------------------------------------------------
@@ -25,7 +24,7 @@ const totalCards = cards.length;
 
 function showCard(index) {
     const sliderWrapper = document.querySelector('.slider-wrapper');
-    sliderWrapper.style.transform = `translateX(${-index * 100}%)`;
+    sliderWrapper.style.transform = `translateX(${ -index * 100 }%)`;
 }
 
 function nextCard() {
@@ -43,15 +42,17 @@ setInterval(nextCard, 3000); // Auto slide every 3 seconds
 // Initialize the slider
 showCard(currentIndex);
 
+
 // ------------------------------------------------------------------------
 // --------------code for before after slider-------------------------------
 // -------------------------------------------------------------------------
+
 let currentSlide5 = 0;
 
 function changeSlide(direction) {
     const slides5 = document.querySelectorAll('.slide5');
     currentSlide5 = (currentSlide5 + direction + slides5.length) % slides5.length;
-    document.querySelector('.slider5').style.transform = `translateX(${-currentSlide5 * 400}px)`;
+    document.querySelector('.slider5').style.transform = `translateX(${ -currentSlide5 * 400 }px)`;
 }
 
 // Optional: Add automatic sliding every 3 seconds
@@ -95,8 +96,8 @@ sliders5.forEach((sliderContainer5) => {
 
         const percentage = (offsetX / containerRect5.width) * 100;
 
-        imageAfter5.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
-        sliderButton5.style.left = `${percentage}%`;
+        imageAfter5.style.clipPath = `inset(0 ${ 100 - percentage }% 0 0)`;
+        sliderButton5.style.left = `${ percentage }%`;
     }
 
     function stopDragging() {
@@ -106,6 +107,7 @@ sliders5.forEach((sliderContainer5) => {
         document.removeEventListener('touchend', stopDragging);
     }
 });
+
 
 // ----------------------------------------------------------------------------
 // ---------------------------------code for popup form------------------------
@@ -135,110 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+// ----------------------------------------------------------------------------
 
 
 
 // document.getElementById('whatsapp-btn').addEventListener('click', function() {
 //     var phoneNumber = '9399875651'; // Replace with your phone number in international format
-//     var defaultMessage = 'Hello, I would like to inquire about your services.'; // Replace with your default message
-//     var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(defaultMessage);
-//     window.location.href = url;
-// });
-
-// --------------------------------------------
-let currentSlidet = 0;
-
-function moveSlides(n) {
-    const slides = document.querySelectorAll('.slidet');
-    const totalSlides = slides.length;
-
-    currentSlidet += n;
-
-    if (currentSlidet < 0) {
-        currentSlidet = totalSlides - 1;
-    }
-
-    if (currentSlidet >= totalSlides) {
-        currentSlidet = 0;
-    }
-
-    const slideWidth = slides[0].offsetWidth;
-    const newTransform = -slideWidth * currentSlidet;
-    document.querySelector('.slidert').style.transform = `translateX(${newTransform}px)`;
-}
-
-////////////////////////////////////////////////////
-///////////////////////////////////////////////////
-/////////////////////////////////////////////////////
-////////////////////////////////////////////////////
-
-
-// const carouselTrack = document.querySelector('.carousel-track');
-// let isTouchActive = false;
-// let initialTouchPos = 0;
-// let currentSlidePos = 0;
-// let previousSlidePos = 0;
-// let animationFrameID;
-// let activeSlideIndex = 0;
-
-// carouselTrack.addEventListener('touchstart', handleTouchStart);
-// carouselTrack.addEventListener('touchend', handleTouchEnd);
-// carouselTrack.addEventListener('touchmove', handleTouchMove);
-
-// function handleTouchStart(event) {
-//     isTouchActive = true;
-//     initialTouchPos = event.touches[0].clientX;
-//     carouselTrack.style.transition = 'none';
-//     animationFrameID = requestAnimationFrame(runAnimation);
-// }
-
-// function handleTouchEnd() {
-//     isTouchActive = false;
-//     cancelAnimationFrame(animationFrameID);
-
-//     const swipeDistance = currentSlidePos - previousSlidePos;
-
-//     // Calculate the width of each carousel slide
-//     const slideWidth = carouselTrack.children[0].offsetWidth;
-
-//     if (swipeDistance < -slideWidth / 4 && activeSlideIndex < carouselTrack.children.length - 1) {
-//         activeSlideIndex += 1;
-//     }
-
-//     if (swipeDistance > slideWidth / 4 && activeSlideIndex > 0) {
-//         activeSlideIndex -= 1;
-//     }
-
-//     updateSlidePosition();
-// }
-
-// function handleTouchMove(event) {
-//     if (isTouchActive) {
-//         const currentTouchPos = event.touches[0].clientX;
-//         currentSlidePos = previousSlidePos + currentTouchPos - initialTouchPos;
-//     }
-// }
-
-// function runAnimation() {
-//     carouselTrack.style.transform = `translateX(${currentSlidePos}px)`;
-//     if (isTouchActive) requestAnimationFrame(runAnimation);
-// }
-
-// function updateSlidePosition() {
-//     const slideWidth = carouselTrack.children[0].offsetWidth;
-//     currentSlidePos = activeSlideIndex * -slideWidth;
-//     previousSlidePos = currentSlidePos;
-//     carouselTrack.style.transition = 'transform 0.3s ease-in-out';
-//     carouselTrack.style.transform = `translateX(${currentSlidePos}px)`;
-// }
+//     var defaultMessage =
