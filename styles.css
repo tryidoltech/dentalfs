@@ -753,7 +753,7 @@ button.next5:hover {
   min-width: 100%;
   box-sizing: border-box;
   padding: 20px;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.697);
 }
 
 .carousel p {
@@ -770,7 +770,7 @@ button.next5:hover {
   overflow: hidden;
   max-width: 800px;
   /* border: 1px solid #ccc; */
-  background-color: #fff;
+background: transparent;
   display: none;
 }
 
@@ -819,14 +819,13 @@ button.next5:hover {
   outline: none;
 }
 #slide1t {
-  background-color: #f1faee;
+  background: transparent;
 }
 #slide2t {
-  background-color: #457b9d;
-  color: white;
+  background: transparent;
 }
 #slide3t {
-  background-color: #a8dadc;
+  background: transparent;
 }
 
 /* ------------------------------------------------------------------------------------------------- */

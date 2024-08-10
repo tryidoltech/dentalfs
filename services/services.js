@@ -166,3 +166,25 @@ function updateSlidePosition() {
     carouselTrack.style.transform = `translateX(${currentSlidePos}px)`;
 }
 
+
+
+let currentSlidet = 0;
+
+function moveSlides(n) {
+    const slides = document.querySelectorAll('.slidet');
+    const totalSlides = slides.length;
+
+    currentSlidet += n;
+
+    if (currentSlidet < 0) {
+        currentSlidet = totalSlides - 1;
+    }
+
+    if (currentSlidet >= totalSlides) {
+        currentSlidet = 0;
+    }
+
+    const slideWidth = slides[0].offsetWidth;
+    const newTransform = -slideWidth * currentSlidet;
+    document.querySelector('.slidert').style.transform = `translateX(${newTransform}px)`;
+}
