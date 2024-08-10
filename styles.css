@@ -316,7 +316,7 @@ hr {
   line-height: 1;
   background-color: whitesmoke;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 50px;
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 .service-item:hover {
   transform: scale(1.05); /* Slightly scale up the card */
@@ -327,6 +327,12 @@ hr {
 
   #service-item1,#service-item2,#service-item3,#service-item4{
     display: none;
+  }
+  button{
+    opacity: 1;
+  }
+  h1 {
+    color: white;
   }
 }
 .service-item-child {
@@ -341,6 +347,15 @@ hr {
 }
 .service-item-butom p {
   width: 80%;
+}
+.service-item button{
+  background-color: var(--secondary-color);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  color: white;
+  opacity: 0;
+
 }
 
 #service-item1 {
