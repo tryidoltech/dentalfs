@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 // ------------------------------------------------------------------------
 // --------------code for before after slider-------------------------------
 // -------------------------------------------------------------------------
@@ -105,8 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
 const carouselTrack = document.querySelector('.carousel-track');
 let isTouchActive = false;
 let initialTouchPos = 0;
@@ -165,8 +162,6 @@ function updateSlidePosition() {
     carouselTrack.style.transition = 'transform 0.3s ease-in-out';
     carouselTrack.style.transform = `translateX(${currentSlidePos}px)`;
 }
-
-
 
 let currentSlidet = 0;
 

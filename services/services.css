@@ -1,27 +1,26 @@
-
 @media (max-width: 768px) {
-.card-parent{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;  
-  row-gap: 20px;
-}
-#card-child1,#card-child2,#card-child3,#card-child4{
-  h1{
-    font-size: 20px;
+  .card-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  #card-child1,
+  #card-child2,
+  #card-child3,
+  #card-child4 {
+    h1 {
+      font-size: 20px;
+    }
   }
 }
-
-}
-
 
 /* --------------------------------------------------------- 
 -----------------code for apoinment popup-------------------
  ---------------------------------------------------------- */
 
-
- :root {
+:root {
   --primary-color: #012a58; /* Dark Blue */
   --secondary-color: #457b9d; /* Light Blue */
   --background-color: #ffffff; /* White */
@@ -119,7 +118,6 @@ button[type="submit"]:hover {
   background-color: rgb(244, 250, 255);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 20px;
-
 }
 
 .slider5 {
@@ -165,7 +163,7 @@ button[type="submit"]:hover {
   width: 100%;
 }
 
-.image-after5{
+.image-after5 {
   position: absolute;
   top: 0;
   left: 0;
@@ -191,7 +189,8 @@ button[type="submit"]:hover {
   justify-content: center;
 }
 
-button.prev5, button.next5 {
+button.prev5,
+button.next5 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -210,7 +209,7 @@ button.next5 {
   right: 10px;
 }
 
-button.prev5:hover, button.next5:hover {
+button.prev5:hover,
+button.next5:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-

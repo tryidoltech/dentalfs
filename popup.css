@@ -1,8 +1,6 @@
-
 /* --------------------------------------------------------- 
 -----------------code for apoinment popup-------------------
  ---------------------------------------------------------- */
-
 
 :root {
   --primary-color: #012a58; /* Dark Blue */
@@ -66,7 +64,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: var(--secondary-color);
 }
-.call button{
+.call button {
   background-color: var(--primary-color);
   color: var(--background-color);
   border: none;
@@ -76,11 +74,11 @@ button[type="submit"]:hover {
   width: 100%;
   margin-bottom: 20px;
 }
-.popup h2{
+.popup h2 {
   position: relative;
   left: 25%;
 }
-.popup h1{
+.popup h1 {
   position: relative;
   left: 46%;
 }
@@ -88,7 +86,7 @@ button[type="submit"]:hover {
   .popup-content {
     padding: 15px;
   }
-  .popup h2{
+  .popup h2 {
     position: relative;
     left: 17%;
   }

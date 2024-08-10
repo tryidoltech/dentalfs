@@ -5,8 +5,8 @@
   --font-size-title: 24px;
   --font-size-subtitle: 16px;
 }
-*{
-  a :active{
+* {
+  a :active {
     background-color: none;
   }
 }
@@ -20,13 +20,11 @@ html {
   height: 100%;
   scroll-behavior: smooth; /* Enable smooth scrolling */
   overflow-x: hidden;
-  
 }
 /* Hide the scrollbar */
 ::-webkit-scrollbar {
   width: 0;
 }
-
 
 /* Navbar styling */
 .navbar {
@@ -323,7 +321,7 @@ hr {
   line-height: 1;
   background-color: whitesmoke;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 50px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .service-item:hover {
   transform: scale(1.05); /* Slightly scale up the card */
@@ -332,10 +330,13 @@ hr {
   color: white;
   line-height: 2;
 
-  #service-item1,#service-item2,#service-item3,#service-item4{
+  #service-item1,
+  #service-item2,
+  #service-item3,
+  #service-item4 {
     display: none;
   }
-  button{
+  button {
     opacity: 1;
   }
   h1 {
@@ -355,14 +356,13 @@ hr {
 .service-item-butom p {
   width: 80%;
 }
-.service-item button{
+.service-item button {
   background-color: var(--secondary-color);
   border: none;
   outline: none;
   padding: 10px 20px;
   color: white;
   opacity: 0;
-
 }
 
 #service-item1 {
@@ -777,7 +777,7 @@ button.next5:hover {
   overflow: hidden;
   max-width: 800px;
   /* border: 1px solid #ccc; */
-background: transparent;
+  background: transparent;
   display: none;
 }
 
