@@ -312,14 +312,22 @@ hr {
   flex-basis: 200;
   border-radius: 20px;
   overflow: hidden;
+  font-size: 14px;
+  line-height: 1;
   background-color: whitesmoke;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 50px;
-  transition: .5s;
+  transition: 1s ease-in-out;
 }
 .service-item:hover {
   transform: scale(1.05); /* Slightly scale up the card */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow */
-  background-color: #f9f9f9; /* Light gray background on hover */
+  background-color: var(--primary-color); /* Light gray background on hover */
+  color: white;
+  line-height: 2;
+
+  #service-item1,#service-item2,#service-item3,#service-item4{
+    display: none;
+  }
 }
 .service-item-child {
   height: 50%;
