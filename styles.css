@@ -989,7 +989,9 @@ button.next5:hover {
 .nevigate-menu {
   height: 300px;
   width: 100%;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  background: url('./assets/banner.jpg');
+  background-size: cover;
   color: rgb(0, 0, 38);
   display: flex;
   align-items: center;
@@ -1195,5 +1197,10 @@ button.next5:hover {
   }
   .carousel {
     display: block;
+  }
+  .nevigate-menu{
+    background: url('./assets/banner2.jpg');
+    background-size: cover;
+    background-position: center;
   }
 }
