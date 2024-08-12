@@ -242,7 +242,8 @@ html {
 
 .content-wrapper {
   background-color: #000000; /* Background color matching the content section */
-  background: url("./assets/bgggggg.png");
+  background: url("./assets/bgb.jpg");
+  backdrop-filter: blur(10px);
   background-position: center;
   background-size: cover;
   /* background-repeat: no-repeat;   */
@@ -272,7 +273,7 @@ hr {
 }
 
 .meet-team-button {
-  background-color: #333333; /* Button color */
+  background-color: var(--secondary-color); /* Button color */
   color: #ffffff;
   border: none;
   padding: 10px 20px;
