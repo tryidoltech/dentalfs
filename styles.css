@@ -326,7 +326,7 @@ hr {
 .service-item:hover {
   transform: scale(1.05); /* Slightly scale up the card */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow */
-  background:transparent; /* Light gray background on hover */
+  background: transparent; /* Light gray background on hover */
   color: rgb(0, 0, 0);
   line-height: 2;
 
@@ -337,10 +337,11 @@ hr {
     display: none;
   } */
 
-  .service-item-butom{
+  .service-item-butom {
     position: absolute;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.757);
+    background-color: rgba(255, 255, 255, 0.479);
+    backdrop-filter: blur(10px);
     height: 100%;
   }
   button {
@@ -350,15 +351,13 @@ hr {
     color: var(--secondary-color);
   }
 
-
-
   .card-paragraph {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: none;
     white-space: wrap;
   }
-  
+
   .card-paragraph::before {
     content: "";
     display: inline-block;
@@ -367,14 +366,11 @@ hr {
     margin-right: 4px;
     margin-left: 4px;
   }
-  
+
   .card-paragraph::after {
     content: "...";
   }
-
 }
-
-
 
 .card-paragraph {
   -webkit-box-orient: vertical;
@@ -395,11 +391,6 @@ hr {
 .card-paragraph::after {
   content: "...";
 }
-
-
-
-
-
 
 .service-item-child {
   height: 50%;
@@ -982,15 +973,15 @@ button.next5:hover {
   font-size: 14px;
 }
 
-/* ---------------------------------- 
-           # CSS FOR Other Pages
-  ------------------------------------*/
+/* ---------------------------------------------------------------------- 
+                                      # CSS FOR Other Pages
+ -------------------------------------------------------------                            ------------------------------------*/
 
 .nevigate-menu {
   height: 300px;
   width: 100%;
   /* background-color: var(--secondary-color); */
-  background: url('./assets/banner.jpg');
+  background: url("./assets/banner.jpg");
   background-size: cover;
   color: rgb(0, 0, 38);
   display: flex;
@@ -1063,7 +1054,7 @@ button.next5:hover {
     font-size: 14px;
   }
 
-  .before-after{
+  .before-after {
     background-color: var(--primary-color);
     width: 100%;
     margin-left: 0;
@@ -1079,7 +1070,7 @@ button.next5:hover {
     }
     p {
       font-size: 16px;
-      color: white
+      color: white;
     }
   }
 }
@@ -1208,8 +1199,8 @@ button.next5:hover {
   .carousel {
     display: block;
   }
-  .nevigate-menu{
-    background: url('./assets/banner2.jpg');
+  .nevigate-menu {
+    background: url("./assets/banner2.jpg");
     background-size: cover;
     background-position: center;
   }
