@@ -423,28 +423,70 @@ hr {
 }
 
 #service-item1 {
-  background: url(./assets/img2.png);
+  background: url(./assets/ser1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 70%;
 }
 #service-item2 {
-  background: url(./assets/img2.png);
+  background: url(./assets/ser2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 70%;
 }
 #service-item3 {
-  background: url(./assets/img2.png);
+  background: url(./assets/ser3.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 70%;
 }
 #service-item4 {
-  background: url(./assets/img2.png);
+  background: url(./assets/ser4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70%;
+}
+#service-item5 {
+  background: url(./assets/ser5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70%;
+}
+#service-item6 {
+  background: url(./assets/se6.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70%;
+}
+#service-item7 {
+  background: url(./assets/ser7.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70%;
+}
+#service-item8 {
+  background: url(./assets/se7.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70%;
+}
+#service-item9 {
+  background: url(./assets/ser9.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70%;
+}
+#service-item10 {
+  background: url(./assets/ser10.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
