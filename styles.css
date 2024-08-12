@@ -324,6 +324,7 @@ hr {
   background-color: whitesmoke;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 50px;
   transition: 0.5s ease-in-out;
+  border: 1px solid rgba(224, 224, 224, 0.963)
 }
 .expara{
   opacity: 0;
