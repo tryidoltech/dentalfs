@@ -323,6 +323,9 @@ hr {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 50px;
   transition: 0.5s ease-in-out;
 }
+.expara{
+  opacity: 0;
+}
 .service-item:hover {
   transform: scale(1.05); /* Slightly scale up the card */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow */
@@ -356,6 +359,7 @@ hr {
     overflow: hidden;
     text-overflow: none;
     white-space: wrap;
+    font-weight: bold;
   }
 
   .card-paragraph::before {
@@ -369,6 +373,9 @@ hr {
 
   .card-paragraph::after {
     content: "...";
+  }
+  .expara{
+    opacity: 1;
   }
 }
 
