@@ -241,10 +241,10 @@ html {
 }
 
 .content-wrapper {
-  background-color: #e8d0b2; /* Background color matching the content section */
-  background: url("./assets/vbg.jpg");
+  background-color: #000000; /* Background color matching the content section */
+  background: url("./assets/bgggggg.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   /* background-repeat: no-repeat;   */
   padding: 20px;
   border-radius: 8px; /* Rounded corners */
@@ -254,7 +254,7 @@ html {
 
 .content-wrapper h2 {
   font-size: 1.5em;
-  color: #333333; /* Darker text color for the heading */
+  color: var(--background-color); /* Darker text color for the heading */
   margin: 0 0 10px 0;
 }
 
