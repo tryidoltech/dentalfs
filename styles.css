@@ -252,6 +252,7 @@ html {
   text-align: left; /* Align text to the left */
 }
 
+
 .content-wrapper h2 {
   font-size: 1.5em;
   color: var(--background-color); /* Darker text color for the heading */
