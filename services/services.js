@@ -183,3 +183,5 @@ function moveSlides(n) {
     const newTransform = -slideWidth * currentSlidet;
     document.querySelector('.slidert').style.transform = `translateX(${newTransform}px)`;
 }
+
+
